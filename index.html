@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Test Proj</title>
+  </head>
+  <body>
+    <header>
+      <a class="navlink primary" href="#">Таблица</a
+      ><a class="navlink" href="#">Форма</a
+      ><a class="navlink" href="#">Галерея</a>
+    </header>
+    <div class="wrapper">
+      <div class="pageInfo">
+        <p>Главная</p>
+        <p>/</p>
+        <p>Тестовое задание</p>
+      </div>
+      <h1>Тестовое задание</h1>
+      <div class="table-section">
+        <h2>Таблица</h2>
+        <p>Должна быть адаптивной, без дублирования информации.</p>
+        <div class="table">
+          <div class="table-head">
+            <p id="name">Название</p>
+            <p id="material">Материал</p>
+            <p id="size">Размер</p>
+            <p id="price">Цена</p>
+          </div>
+          <div id="table-body"></div>
+        </div>
+        <div class="form-section">
+          <h2>Форма</h2>
+          <p>
+            Должна иметь проверку полей: обязательное поле, формат, минимальное
+            значение. При несоответствии должна выводиться соответствующая
+            ошибка. Поле «Телефон» должен содержать маску ввода.
+          </p>
+          <div class="form">
+            <h3>Заказать проект</h3>
+            <div class="form-body">
+              <div class="form-wrapper">
+                <div class="input-box">
+                  <h4>Название</h4>
+                  <input type="text" />
+                </div>
+                <div class="fields">
+                  <div class="price-field">
+                    <p>Стоимость</p>
+                    <input id="input-num" type="text" value="20000000" />
+                    <input
+                      id="input-range"
+                      min="10000000"
+                      value="20000000"
+                      max="40000000"
+                      type="range"
+                    />
+                    <div class="price-marks">
+                      <!-- тут можно было на флексах, но тогда не подходит под pixel perfect -->
+                      <p class="mark-num">10</p>
+                      <p class="mark-num">20</p>
+                      <p id="mark-30" class="mark-num">30</p>
+                      <p class="mark-num">40+</p>
+                    </div>
+                  </div>
+                  <div class="square-field">
+                    <p>Площадь</p>
+                    <div class="square-btns">
+                      <button id="minusBtn" class="squareBtn">
+                        <img src="./img/Minus.svg" alt="minus" />
+                      </button>
+                      <input
+                        id="square-input"
+                        value="200 м²"
+                        disabled
+                        type="text"
+                      />
+                      <button id="plusBtn" class="squareBtn">
+                        <img src="./img/Plus.svg" alt="plus" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="furnish-toggle">
+                    <p>Отделка</p>
+                    <div class="toggle-box">
+                      <input type="checkbox" id="furnish" />
+                      <label for="furnish">Toggle</label>
+                      <p>Вайтбокс</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="phone">
+                    <p>Телефон</p>
+                    <input type="text" id="phone" value="+7" />
+                  </div>
+                  <div class="mail">
+                    <p>Почта</p>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="files-upload">
+                  <p>Приложить файлы</p>
+                  <div class="uploader">
+                    <div class="container">
+                      <input type="file" name="file" id="file" />
+                      <div class="upload-area" id="uploadfile">
+                        <h5>
+                          Кликните или перенесите файлы в эту область.<br />Только
+                          JPG, до 1 Мб
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comforts-password">
+                  <div class="comforts">
+                    <p>Удобства</p>
+                    <div class="custom-select">
+                      <select class="select">
+                        <option>Любые</option>
+                        <option>Кирпичный</option>
+                        <option>Деревянный</option>
+                        <option>Монолитный</option>
+                        <option>Каркасный</option>
+                        <option>Щитовой</option>
+                        <option>Кирпичный</option>
+                        <option>Деревянный</option>
+                        <option>Монолитный</option>
+                        <option>Каркасный</option>
+                        <option>Щитовой</option>
+                        <option>Кирпичный</option>
+                        <option>Деревянный</option>
+                        <option>Монолитный</option>
+                        <option>Каркасный</option>
+                        <option>Щитовой</option>
+                        <option>Кирпичный</option>
+                        <option>Деревянный</option>
+                        <option>Монолитный</option>
+                        <option>Каркасный</option>
+                        <option>Щитовой</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="password">
+                    <p>Пароль</p>
+                    <input id="password" type="password" />
+                    <img id="eye" src="../img/eye-on.svg" alt="eye" />
+                  </div>
+                </div>
+                <div class="suggest">
+                  <p>Пожелания</p>
+                  <input type="text" placeholder="укажите через запятую" />
+                </div>
+              </div>
+              <button class="submitBtn"><p>Отправить заявку</p></button>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gal-info">
+              <h2>Галерея</h2>
+              <p>
+                Фильтры должны фильтровать изображения без перезагрузки.
+                Адаптивность: между реперными точками — пропорциональное
+                масштабирование, далее уменьшение кол-ва фото в строке.
+                Пролистывание должно быть по 8 фото (страницами) для дектопа, по
+                4 фото на мобилке. Стрелки появляются только при наведении на
+                блок с фото.
+              </p>
+            </div>
+            <div class="gal-photos">
+              <div class="filter-btns">
+                <button class="filterBtn">Бани</button>
+                <button class="filterBtn active">Сауны</button>
+                <button class="filterBtn">Хаммамы</button>
+                <button class="filterBtn">Хаммамы</button>
+              </div>
+              <div class="photos-block">
+                <img src="./img/image 28.png" alt="28" /><img
+                  src="./img/image 30.png"
+                  alt="30"
+                /><img src="./img/image 37.png" alt="37" /><img
+                  src="./img/image 38.png"
+                  alt="38"
+                />
+                <img src="./img/image 39.png" alt="39" /><img
+                  src="./img/image 45.png"
+                  alt="45"
+                /><img src="./img/image 46.png" alt="46" /><img
+                  src="./img/image 49.png"
+                  alt="49"
+                />
+                <button id="slideLeft" class="slideBtn">
+                  <img src="./img/arrow-left.svg" alt="left" />
+                </button>
+                <button id="slideRight" class="slideBtn">
+                  <img src="./img/arrow-right.svg" alt="right" />
+                </button>
+              </div>
+              <div class="block-pages">
+                <button class="pageBtn"></button
+                ><button class="pageBtn active"></button
+                ><button class="pageBtn"></button
+                ><button class="pageBtn"></button
+                ><button class="pageBtn"></button
+                ><button class="pageBtn"></button
+                ><button class="pageBtn"></button
+                ><button class="pageBtn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

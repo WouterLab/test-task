@@ -1,0 +1,1760 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  line-height: 1.15;
+  /* 1 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+pre {
+  font-size: 1em;
+  /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+code,
+kbd,
+samp {
+  font-size: 1em;
+  /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+/* line 133, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  /* 2 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  font-family: inherit;
+  /* 1 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button,
+input {
+  overflow: visible;
+  /* 1 */
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button,
+select {
+  text-transform: none;
+  /* 1 */
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+legend {
+  display: table;
+  /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  max-width: 100%;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  vertical-align: baseline;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+  color: #333333;
+}
+
+/* line 91, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 104, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+html {
+  height: 100%;
+}
+
+/* line 107, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 110, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 114, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 118, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 125, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("../fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("../fonts/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("../fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
+  font-family: 'Gilroy';
+}
+
+/* line 83, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 89, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+html, body {
+  height: 100%;
+}
+
+/* line 92, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+html {
+  margin: auto;
+}
+
+/* line 95, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+body {
+  max-width: 1920px;
+  color: #333;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Gilroy";
+}
+
+/* line 104, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+header {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 83px;
+}
+
+/* line 113, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.navlink {
+  margin-right: 40px;
+}
+
+/* line 115, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.navlink:last-child {
+  margin-right: 0;
+}
+
+/* line 118, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.wrapper {
+  margin: 0 64px;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 126, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.primary {
+  color: #0066cc;
+}
+
+/* line 129, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.pageInfo {
+  width: 197px;
+  height: 16px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+/* line 134, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.pageInfo p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 8px;
+  color: #333;
+}
+
+/* line 140, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.pageInfo p:last-child {
+  margin-right: 0;
+}
+
+/* line 143, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 94px;
+  color: #333;
+}
+
+/* line 151, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #333;
+  margin-bottom: 9px;
+}
+
+/* line 158, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-section {
+  height: 440px;
+  width: 884px;
+}
+
+/* line 161, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1D1D1F;
+  margin-bottom: 55px;
+}
+
+/* line 168, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 104px;
+}
+
+/* line 175, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-head {
+  background: #F5F5F7;
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+/* line 185, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-head p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+/* line 193, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#name {
+  margin-left: 31px;
+  margin-right: 166px;
+  width: 74px;
+  height: 24px;
+}
+
+/* line 199, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#material {
+  margin-right: 86px;
+  width: 78px;
+  height: 24px;
+}
+
+/* line 204, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#size {
+  margin-right: 157px;
+  width: 56px;
+  height: 24px;
+}
+
+/* line 209, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#price {
+  margin-right: 195px;
+  width: 40px;
+  height: 24px;
+}
+
+/* line 214, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-el {
+  padding: 0 31px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+/* line 221, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-el p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+}
+
+/* line 227, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-name {
+  width: 240px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* line 232, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-name p {
+  margin: 0;
+}
+
+/* line 235, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-material {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 164px;
+}
+
+/* line 240, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-material p {
+  margin: 0;
+}
+
+/* line 242, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-size {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 145px;
+}
+
+/* line 247, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-size p {
+  margin: 0;
+}
+
+/* line 249, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-price {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 110px;
+  margin-right: 64px;
+}
+
+/* line 256, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-price p {
+  margin: 0;
+  text-align: right;
+}
+
+/* line 259, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-btn {
+  padding: 3px 16px 5px;
+  width: 98px;
+  height: 32px;
+  background: rgba(0, 102, 204, 0.1);
+  border-radius: 4px;
+  border: none;
+  transition: background .3s;
+}
+
+/* line 267, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-btn p {
+  margin-bottom: 0;
+  width: 66px;
+  height: 24px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0066cc;
+  transition: color .3s;
+}
+
+/* line 278, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-btn:hover {
+  color: white;
+  background: #0066cc;
+  cursor: pointer;
+}
+
+/* line 282, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.table-btn:hover p {
+  color: #fff;
+}
+
+/* line 285, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form-section {
+  width: 884px;
+  height: 1400px;
+}
+
+/* line 288, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form-section p {
+  margin-bottom: 55px;
+}
+
+/* line 290, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form-section h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  margin-left: 1px;
+}
+
+/* line 298, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form {
+  background: #F5F5F7;
+  width: 842px;
+  border-radius: 20px;
+  padding: 80px 96px 95px;
+  margin-bottom: 105px;
+}
+
+/* line 304, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #1D1D1F;
+  margin-bottom: 47px;
+}
+
+/* line 313, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.form-wrapper {
+  width: 650px;
+}
+
+/* line 316, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.input-box {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+/* line 319, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.input-box input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+}
+
+/* line 327, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.input-box input:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 329, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.input-box h4 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 10px;
+}
+
+/* line 338, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+input[type=text], input[type=password], select {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+/* line 345, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.fields {
+  width: 650px;
+  height: 117px;
+  margin-bottom: 35px;
+  display: flex;
+  margin-left: 1px;
+}
+
+/* line 352, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-field {
+  width: 222px;
+  height: 100%;
+  margin-right: 31px;
+}
+
+/* line 356, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-field p {
+  width: 81px;
+  height: 24px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 9px;
+}
+
+/* line 366, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-field input[type=text] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 4px 4px 0px 0px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1D1D1F;
+}
+
+/* line 378, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-field input[type=text]:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 381, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-marks {
+  width: 223px;
+  height: 16px;
+  display: flex;
+}
+
+/* line 385, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-marks .mark-num {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #58585D;
+  text-align: center;
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 56px;
+}
+
+/* line 396, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.price-marks .mark-num:last-child {
+  margin-right: 0;
+}
+
+/* line 399, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#mark-30 {
+  margin-right: 50px;
+}
+
+/* line 402, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#input-num::-webkit-outer-spin-button, #input-num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 406, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#input-num {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 4px 4px 0px 0px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+}
+
+/* line 423, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#input-num:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 426, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#input-range {
+  width: 100%;
+  background: #0066cc;
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  top: 0;
+  height: 1px;
+  display: flex;
+}
+
+/* line 436, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.square-field {
+  width: 222px;
+  height: 89px;
+  margin-right: 32px;
+}
+
+/* line 440, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.square-field p {
+  width: 70px;
+  height: 24px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 9px;
+}
+
+/* line 451, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.square-btns {
+  display: flex;
+}
+
+/* line 454, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#square-input {
+  width: 112px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+/* line 458, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#square-input:disabled {
+  background-color: #fff;
+}
+
+/* line 461, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.squareBtn {
+  width: 56px;
+  height: 57px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+/* line 472, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.squareBtn:hover {
+  background: #0066cc;
+}
+
+/* line 474, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.squareBtn:hover img {
+  transition: filter .3s;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+/* line 479, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#plusBtn {
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+/* line 483, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#minusBtn {
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+/* line 487, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.furnish-toggle {
+  width: 100%;
+}
+
+/* line 489, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.furnish-toggle p {
+  width: 70px;
+  height: 24px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 24px;
+}
+
+/* line 500, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.toggle-box {
+  width: 100%;
+  display: flex;
+}
+
+/* line 503, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.toggle-box label {
+  margin-right: 10px;
+  padding-top: 1px;
+}
+
+/* line 506, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.toggle-box p {
+  margin-bottom: 0;
+}
+
+/* line 509, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+input[type=checkbox] {
+  display: none;
+}
+
+/* line 512, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 44px;
+  height: 24px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+/* line 522, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* line 533, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+input:checked + label {
+  background: #0066cc;
+}
+
+/* line 536, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+/* line 540, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+label:active:after {
+  width: 30px;
+}
+
+/* line 543, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.contact {
+  height: 89px;
+  display: flex;
+  margin-bottom: 39px;
+}
+
+/* line 547, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.contact p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 9px;
+}
+
+/* line 556, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.phone {
+  width: 222px;
+  margin-right: 31px;
+}
+
+/* line 559, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.phone input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+}
+
+/* line 567, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.phone input:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 570, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.mail {
+  width: 397px;
+}
+
+/* line 572, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.mail input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+}
+
+/* line 580, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.mail input:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 582, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.mail p {
+  margin-left: 1px;
+}
+
+/* line 585, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.files-upload {
+  height: 145px;
+  margin-bottom: 39px;
+}
+
+/* line 588, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.files-upload p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 9px;
+}
+
+/* line 597, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.upload-area {
+  width: 100%;
+  height: 112px;
+  border: 2px dashed #B9B1B1;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: auto;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #58585D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s border;
+}
+
+/* line 616, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.upload-area:hover {
+  cursor: pointer;
+  border: 2px dashed #E1E1E1;
+}
+
+/* line 619, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.upload-area h5 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #58585D;
+}
+
+/* line 628, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#file {
+  display: none;
+}
+
+/* line 631, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  padding: 2px;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+  float: left;
+}
+
+/* line 639, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.size {
+  font-size: 12px;
+}
+
+/* line 642, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.comforts-password {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  margin-bottom: 38px;
+}
+
+/* line 647, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.comforts-password p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 10px;
+}
+
+/* line 656, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.comforts {
+  width: 309px;
+  height: 90px;
+  margin-right: 32px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 666, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.password {
+  width: 309px;
+  height: 90px;
+  position: relative;
+}
+
+/* line 670, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.password input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+  padding: 16px 17px 16px 16px;
+  letter-spacing: 3px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* line 682, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.password input:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 685, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#eye {
+  position: absolute;
+  top: 50px;
+  right: 17px;
+  cursor: pointer;
+  filter: invert(7%) sepia(5%) saturate(865%) hue-rotate(201deg) brightness(92%) contrast(89%);
+}
+
+/* line 692, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.suggest {
+  height: 89px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+/* line 696, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.suggest input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+  color: #1D1D1F;
+}
+
+/* line 704, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.suggest input:focus {
+  border: 1px solid #0066cc;
+}
+
+/* line 706, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.suggest p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  margin-bottom: 9px;
+}
+
+/* line 715, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.submitBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 28px 17px;
+  width: 192px;
+  height: 56px;
+  background: #0066CC;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 727, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.submitBtn p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+/* line 736, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.gal-info {
+  width: 884px;
+  height: 201px;
+  margin-bottom: 71px;
+}
+
+/* line 740, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.gal-info p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1D1D1F;
+}
+
+/* line 748, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.gal-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 753, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.filter-btns {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+/* line 757, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.filterBtn {
+  height: 40px;
+  padding: 4px 16px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+  background: #F2F4F7;
+  border-radius: 10px;
+  border: none;
+  margin-right: 8px;
+}
+
+/* line 770, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.filterBtn:last-child {
+  margin-right: 0;
+}
+
+/* line 773, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.active {
+  color: #FFFFFF;
+  background: #0066CC;
+}
+
+/* line 777, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.photos-block {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  overflow: hidden;
+  margin-bottom: 44px;
+}
+
+/* line 784, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.photos-block img {
+  cursor: pointer;
+}
+
+/* line 787, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.block-pages {
+  width: 240px;
+  height: 16px;
+  display: flex;
+  margin-bottom: 104px;
+}
+
+/* line 793, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.pageBtn {
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 800, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.pageBtn:last-child {
+  margin-right: 0;
+}
+
+/* line 803, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.slideBtn {
+  opacity: 0;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 0.1px 0.3px rgba(0, 0, 0, 0.014), 0px 0.3px 0.8px rgba(0, 0, 0, 0.02), 0px 0.5px 1.5px rgba(0, 0, 0, 0.025), 0px 0.9px 2.7px rgba(0, 0, 0, 0.03), 0px 1.7px 5px rgba(0, 0, 0, 0.036);
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background .3s, filter .3s;
+}
+
+/* line 817, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.slideBtn:hover {
+  background: #0066cc;
+}
+
+/* line 819, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.slideBtn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* line 822, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#slideLeft {
+  top: 216px;
+  left: 97px;
+}
+
+/* line 826, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+#slideRight {
+  top: 216px;
+  right: 97px;
+}
+
+/* line 830, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.custom-select {
+  position: relative;
+}
+
+/* line 833, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+select {
+  display: none;
+}
+
+/* line 836, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-selected {
+  padding: 16px 17px 16px 16px;
+  height: 56px;
+  background: #FFF;
+  background-image: url("../img/Select.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 95%;
+  color: #1D1D1F;
+  appearance: none;
+  border-radius: 4px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 852, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-selected:after {
+  background-image: url("../img/Select.svg");
+}
+
+/* line 855, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-arrow-active {
+  background-image: url("../img/Select2.svg");
+}
+
+/* line 858, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-items div, .select-selected {
+  color: #1D1D1F;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* line 868, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-items {
+  height: 309px;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  overflow: auto;
+}
+
+/* line 878, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-hide {
+  display: none;
+}
+
+/* line 881, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.select-items div:hover, .same-as-selected {
+  color: #0066cc;
+}
+
+/* line 884, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+::-webkit-scrollbar {
+  width: 13px;
+  padding: 4px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+/* line 891, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  background-color: #0066cc;
+  border-radius: 15px;
+  background-clip: content-box;
+}
+
+/* line 897, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 902, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+::-webkit-scrollbar-corner {
+  background-color: #0066cc;
+}
+
+/* line 905, C:/Users/Даня/Desktop/Labs/Courses/Web-Development/tasktest project/sass/style.sass */
+.errorValidate {
+  border: 1px solid #DC3545;
+}
+
+/*# sourceMappingURL=style.css.map */
