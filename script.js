@@ -14,7 +14,6 @@ const addTableElement = (obj) => {
     <div class="table-price"><p>${obj.price} ₽</p></div>
     <button class="table-btn"><p>В корзину</p></button>
   </div>`;
-  console.log(obj);
 };
 
 fetch('https://63267beaba4a9c475326fd42.mockapi.io/api/dbases/test-files')
@@ -209,23 +208,112 @@ document.addEventListener('click', closeAllSelect);
 
 //(xxx) xxx-xxxx format code
 $(document).ready(function () {
-  $('#phone').on('change', function () {
-    var value = $('#phone').val();
-    var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-    if (!re.test(value)) {
-      $('#phone').removeClass('errorValidate');
-    }
-    if (re.test(value)) {
-      $('#phone').addClass('errorValidate');
+  $('#phone').on('input', function () {
+    $('#phone').mask('+7 999 999-99-99');
+    if ($('#phone').val().length < 16) {
+      $('#phone').css({
+        border: '1px solid #DC3545',
+        backgroundImage: 'url("./img/x-close.svg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionY: '50%',
+        backgroundPositionX: '95%',
+      });
+    } else if ($('#phone').val().length === 16) {
+      $('#phone').css({
+        border: '1px solid #E1E1E1',
+        backgroundImage: 'url("./img/check.svg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionY: '50%',
+        backgroundPositionX: '95%',
+      });
     }
   });
 });
 
 $(document).ready(function () {
   $('#input-num').val('20000000 ₽');
-  $('#input-num').on('change', function () {
+  $('#input-num').change(function () {
     var chVal = $(this).val();
     if (chVal == 0) $(this).val('20000000' + ' ₽');
     else $(this).val(chVal + ' ₽');
+  });
+});
+
+$(document).ready(function () {
+  $('#email').on('input', function () {
+    var value = $(this).val();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!regex.test(value)) {
+      $('#email').css({
+        border: '1px solid #DC3545',
+        backgroundImage: 'url("./img/x-close.svg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionY: '50%',
+        backgroundPositionX: '95%',
+      });
+    } else if (regex.test(value)) {
+      $('#email').css({
+        border: '1px solid #E1E1E1',
+        backgroundImage: 'url("./img/check.svg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionY: '50%',
+        backgroundPositionX: '95%',
+      });
+    }
+  });
+});
+
+$(document).ready(function () {
+  $('#furnish').on('click', function () {
+    $('#furnish-txt').text(function () {
+      if ($('#furnish-txt').text() == 'Вайтбокс') {
+        return 'Нет';
+      } else if ($('#furnish-txt').text() == 'Нет') {
+        return 'Вайтбокс';
+      }
+    });
+  });
+});
+
+$(document).ready(function () {
+  $('.photos-block').hover(function () {
+    $('.slideBtn').css('opacity', '1');
+  });
+  $('.photos-block').mouseleave(function () {
+    $('.slideBtn').css('opacity', '0');
+  });
+});
+
+// // ======================================?
+// $(document).ready(function () {
+//   $('#slideLeft').click(function () {
+//     $('.photos-block').animate(
+//       {
+//         left: '100%',
+//       },
+//       1000
+//     );
+//   });
+// });
+
+$(document).ready(function () {
+  $('#input-range').on('input', function () {
+    var value = $('#input-range').val();
+    $('#input-num').val(value + ' ₽');
+  });
+});
+
+$(document).ready(function () {
+  $('#plusBtn').click(function () {
+    var value = $('#square-input').val().slice(0, -2);
+    var num = Number(value) + 50;
+    $('#square-input').val(`${num} м²`);
+  });
+  $('#minusBtn').click(function () {
+    if ($('#square-input').val() !== '0 м²') {
+      var value = $('#square-input').val().slice(0, -2);
+      var num = Number(value) - 50;
+      $('#square-input').val(`${num} м²`);
+    }
   });
 });

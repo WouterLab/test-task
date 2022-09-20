@@ -10,6 +10,12 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+      integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="styles/style.css" />
     <title>Test Proj</title>
   </head>
@@ -94,18 +100,18 @@
                     <div class="toggle-box">
                       <input type="checkbox" id="furnish" />
                       <label for="furnish">Toggle</label>
-                      <p>Вайтбокс</p>
+                      <p id="furnish-txt">Нет</p>
                     </div>
                   </div>
                 </div>
                 <div class="contact">
                   <div class="phone">
                     <p>Телефон</p>
-                    <input type="text" id="phone" value="+7" />
+                    <input type="text" id="phone" value="+7 " />
                   </div>
                   <div class="mail">
                     <p>Почта</p>
-                    <input type="text" />
+                    <input type="text" id="email" />
                   </div>
                 </div>
                 <div class="files-upload">
@@ -184,37 +190,83 @@
                 <button class="filterBtn">Хаммамы</button>
                 <button class="filterBtn">Хаммамы</button>
               </div>
-              <div class="photos-block">
-                <img src="./img/image 28.png" alt="28" /><img
-                  src="./img/image 30.png"
-                  alt="30"
-                /><img src="./img/image 37.png" alt="37" /><img
-                  src="./img/image 38.png"
-                  alt="38"
-                />
-                <img src="./img/image 39.png" alt="39" /><img
-                  src="./img/image 45.png"
-                  alt="45"
-                /><img src="./img/image 46.png" alt="46" /><img
-                  src="./img/image 49.png"
-                  alt="49"
-                />
-                <button id="slideLeft" class="slideBtn">
-                  <img src="./img/arrow-left.svg" alt="left" />
-                </button>
-                <button id="slideRight" class="slideBtn">
-                  <img src="./img/arrow-right.svg" alt="right" />
-                </button>
+              <div class="block-wrapper">
+                <div class="photos-block" id="block-1">
+                  <img src="./img/image 28.png" alt="28" /><img
+                    src="./img/image 30.png"
+                    alt="30"
+                  /><img src="./img/image 37.png" alt="37" /><img
+                    src="./img/image 38.png"
+                    alt="38"
+                  />
+                  <img src="./img/image 39.png" alt="39" /><img
+                    src="./img/image 45.png"
+                    alt="45"
+                  /><img src="./img/image 46.png" alt="46" /><img
+                    src="./img/image 49.png"
+                    alt="49"
+                  />
+                  <button id="slideLeft" class="slideBtn">
+                    <img src="./img/arrow-left.svg" alt="left" />
+                  </button>
+                  <button id="slideRight" class="slideBtn">
+                    <img src="./img/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
+                <div class="photos-block hidden" id="block-2">
+                  <img src="./img/image 28.png" alt="28" /><img
+                    src="./img/image 30.png"
+                    alt="30"
+                  /><img src="./img/image 37.png" alt="37" /><img
+                    src="./img/image 38.png"
+                    alt="38"
+                  />
+                  <img src="./img/image 39.png" alt="39" /><img
+                    src="./img/image 45.png"
+                    alt="45"
+                  /><img src="./img/image 46.png" alt="46" /><img
+                    src="./img/image 49.png"
+                    alt="49"
+                  />
+                  <button id="slideLeft" class="slideBtn">
+                    <img src="./img/arrow-left.svg" alt="left" />
+                  </button>
+                  <button id="slideRight" class="slideBtn">
+                    <img src="./img/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
+                <div class="photos-block hidden" id="block-3">
+                  <img src="./img/image 28.png" alt="28" /><img
+                    src="./img/image 30.png"
+                    alt="30"
+                  /><img src="./img/image 37.png" alt="37" /><img
+                    src="./img/image 38.png"
+                    alt="38"
+                  />
+                  <img src="./img/image 39.png" alt="39" /><img
+                    src="./img/image 45.png"
+                    alt="45"
+                  /><img src="./img/image 46.png" alt="46" /><img
+                    src="./img/image 49.png"
+                    alt="49"
+                  />
+                  <button id="slideLeft" class="slideBtn">
+                    <img src="./img/arrow-left.svg" alt="left" />
+                  </button>
+                  <button id="slideRight" class="slideBtn">
+                    <img src="./img/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
               </div>
               <div class="block-pages">
-                <button class="pageBtn"></button
-                ><button class="pageBtn active"></button
-                ><button class="pageBtn"></button
-                ><button class="pageBtn"></button
-                ><button class="pageBtn"></button
-                ><button class="pageBtn"></button
-                ><button class="pageBtn"></button
-                ><button class="pageBtn"></button>
+                <button id="btn-1" class="pageBtn"></button
+                ><button id="btn-2" class="pageBtn active"></button
+                ><button id="btn-3" class="pageBtn"></button
+                ><button id="btn-4" class="pageBtn"></button
+                ><button id="btn-5" class="pageBtn"></button
+                ><button id="btn-6" class="pageBtn"></button
+                ><button id="btn-7" class="pageBtn"></button
+                ><button id="btn-8" class="pageBtn"></button>
               </div>
             </div>
           </div>

@@ -157,7 +157,8 @@ h2
 
 .table-section
   height: 440px
-  width: 884px
+  max-width: 884px
+  width: 100%
   p
     font-weight: 400
     font-size: 20px
@@ -505,6 +506,9 @@ input[type=text], input[type=password], select
     padding-top: 1px
   p
     margin-bottom: 0
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
 
 input[type=checkbox]
   display: none
@@ -767,22 +771,37 @@ label:active:after
   border-radius: 10px
   border: none
   margin-right: 8px
+  transition: background .3s, color .3s
+  cursor: pointer
   &:last-child
     margin-right: 0
+  &:hover
+    background: $primary
+    color: #fff
 
 .active
   color: #FFFFFF
   background: #0066CC
+  &:hover
+    color: #333333
+    background: #F2F4F7
+
+.block-wrapper
+  display: flex
+  flex-direction: row
 
 .photos-block
   position: relative
   display: grid
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: 1fr 1fr 1fr 1fr
   gap: 24px
   overflow: hidden
   margin-bottom: 44px
   img
     cursor: pointer
+
+.hidden
+  display: none
 
 .block-pages
   width: 240px
@@ -813,7 +832,7 @@ label:active:after
   justify-content: center
   align-items: center
   cursor: pointer
-  transition: background .3s, filter .3s
+  transition: background .3s, filter .3s, opacity .3s
   &:hover
     background: $primary
     img
@@ -904,3 +923,8 @@ select
 
 .errorValidate
   border: 1px solid $red
+
+@media (max-width: 376px)
+  body
+    max-width: 375px
+  
